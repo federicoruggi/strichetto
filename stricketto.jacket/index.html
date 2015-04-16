@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+    <head>
+        <meta name="jacket.title" content="Strichetto" />
+        <meta name="jacket.author" content="Federico Ruggi" />
+        <meta name="jacket.url" content="https://github.com/reifcode/strichetto" />
+        <meta name="jacket.version" content="1.0" />
+        <meta name="jacket.uid" content="me.reifcode.strichetto" />
+		<meta name="jacket.bounds" content="700x37" />
+
+        <link rel="stylesheet" type="text/css" href="index.css"  />
+
+        <script>
+
+        Simplify.listen(Simplify.events.ready, function (initial_state) {
+            $("body").animate({ opacity: .75 });
+        });
+
+        Simplify.listen(Simplify.events.newTrack, function (artist, title) {
+            if (artist && title) {
+                $(".track").html("<div>" + artist + " - " + title + "</div>");
+            }
+        });
+		
+		Simplify.listen(Simplify.events.newCover, function(cover) {
+			if (cover != undefined) {
+				$(".cover").html("<img src='"+cover+"'>");	
+			}
+		});
+        </script>
+    </head>
+    <body>
+		<div class="cover"></div>
+        <div class="track"></div>
+    </body>
+</html>

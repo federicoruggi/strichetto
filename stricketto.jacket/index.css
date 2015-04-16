@@ -1,0 +1,40 @@
+body {
+	background: transparent;
+	opacity: 0;
+	width: 600px;
+	margin: 0;
+	padding: 0;
+}
+
+.track {
+	font-size: 16px;
+	font-family: "Helvetica Neue";
+	font-weight: lighter;
+	letter-spacing: -.4px;
+	overflow: hidden;
+	color: #fff;
+	height: 37px;
+	padding-top: 9px;
+}
+
+.track div {
+	background: #000;
+	display: inline;
+	padding: 5px;
+	padding-top: 9px;
+	padding-bottom: 10px;
+}
+
+.cover {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+.cover img {
+	height: 35px;
+	border: 1px solid #000;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
